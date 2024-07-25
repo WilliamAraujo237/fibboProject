@@ -1,0 +1,60 @@
+<div class="container mt-4">
+  <h2 class="mb-4">Lista de Produtos</h2>
+  
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col">Valor</th>
+        <th scope="col">Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produto of produtos; let i = index">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ produto.id }}</td>
+        <td>{{ produto.nome }}</td>
+        <td>{{ produto.quantidade }}</td>
+        <td>R$ {{ produto.valor.toFixed(2) }}</td>
+        <td>
+          <button (click)="deletarProduto(produto.id)" class="btn btn-danger btn-sm">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="mt-4">
+    <h3>Procurar Produto por ID</h3>
+    <div class="input-group mb-3">
+      <input type="number" class="form-control" [(ngModel)]="produtoId" placeholder="Digite o ID do produto" />
+      <button (click)="procurarProduto()" class="btn btn-primary">Procurar</button>
+    </div>
+  </div>
+
+  <div *ngIf="produtoEncontrado" class="mt-4">
+    <h4>Produto Encontrado</h4>
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <td><strong>ID:</strong></td>
+          <td>{{ produtoEncontrado.id }}</td>
+        </tr>
+        <tr>
+          <td><strong>Nome:</strong></td>
+          <td>{{ produtoEncontrado.nome }}</td>
+        </tr>
+        <tr>
+          <td><strong>Quantidade:</strong></td>
+          <td>{{ produtoEncontrado.quantidade }}</td>
+        </tr>
+        <tr>
+          <td><strong>Valor:</strong></td>
+          <td>R$ {{ produtoEncontrado.valor.toFixed(2) }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

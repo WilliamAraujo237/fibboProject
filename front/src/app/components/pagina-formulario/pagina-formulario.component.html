@@ -1,0 +1,111 @@
+<div class="container mt-5">
+  <div class="row mb-3" style="margin-top: 5px;">
+    <div class="col-md-6">
+      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Atualizar</div>
+        <div class="card-body" style="color: black; background-color: rgb(200, 212, 212);">
+          <h5 class="card-title">Atualizar um produto</h5>
+          <p class="card-text">Caso queira atualizar um produto em nossa lista, informe o ID no formulário abaixo e modifique o produto por completo, Nome, Quantidade e Valor.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header">Adicionar</div>
+        <div class="card-body" style="color: black; background-color: rgb(200, 212, 212);">
+          <h5 class="card-title">Adicionar produto</h5>
+          <p class="card-text">Para adicionar um produto basta preencher as informações do formulário, deixando apenas o campo ID em branco.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header bg-primary text-white">
+      <h4 class="mb-0">Cadastra / Atualiza Produto</h4>
+    </div>
+    <div class="card-body">
+      <form class="form" (ngSubmit)="enviar()" #produtoForm="ngForm">
+        <div class="mb-3">
+          <label for="idProduto" class="form-label">ID do Produto</label>
+          <input
+            type="number"
+            class="form-control"
+            id="idProduto"
+            placeholder="ID do produto"
+            name="id"
+            [(ngModel)]="produto.id"
+            #id="ngModel"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="nomeProduto" class="form-label">Nome do Produto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nomeProduto"
+            placeholder="Nome do produto"
+            name="nome"
+            [(ngModel)]="produto.nome"
+            required
+            #nome="ngModel"
+            [ngClass]="{'is-invalid': nome.invalid && nome.touched}"
+          />
+          <div *ngIf="nome.invalid && nome.touched" class="invalid-feedback">
+            O nome do produto é obrigatório.
+          </div>
+        </div>
+      
+        <div class="mb-3">
+          <label for="quantidadeProduto" class="form-label">Quantidade</label>
+          <input
+            type="number"
+            class="form-control"
+            id="quantidadeProduto"
+            placeholder="Quantidade"
+            name="quantidade"
+            [(ngModel)]="produto.quantidade"
+            required
+            min="1"
+            #quantidade="ngModel"
+            [ngClass]="{'is-invalid': quantidade.invalid && quantidade.touched}"
+          />
+          <div *ngIf="quantidade.invalid && quantidade.touched" class="invalid-feedback">
+            A quantidade é obrigatória e deve ser maior que 0.
+          </div>
+        </div>
+        
+        <div class="mb-3">
+          <label for="valorProduto" class="form-label">Valor</label>
+          <div class="input-group">
+            <span class="input-group-text">R$</span>
+            <input
+              type="number"
+              class="form-control"
+              id="valorProduto"
+              placeholder="Valor"
+              name="valor"
+              [(ngModel)]="produto.valor"
+              required
+              min="0.01"
+              step="0.01"
+              #valor="ngModel"
+              [ngClass]="{'is-invalid': valor.invalid && valor.touched}"
+            />
+            <span class="input-group-text">.00</span>
+            <div *ngIf="valor.invalid && valor.touched" class="invalid-feedback">
+              O valor é obrigatório e deve ser maior que 0.
+            </div>
+          </div>
+        </div>
+
+        <div class="text-end">
+          <button type="submit" class="btn btn-success" [disabled]="produtoForm.invalid">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

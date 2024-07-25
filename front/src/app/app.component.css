@@ -1,0 +1,17 @@
+.navbar-custom {
+    background-color: #0056b3; /* Escolha seu tom de azul */
+    border-bottom: 2px solid #004080; /* Estilo opcional para a borda */
+  }
+  
+  .navbar-custom .nav-link,
+  .navbar-custom .navbar-brand {
+    color: #ffffff; /* Define a cor do texto como branco */
+    transition: color 0.3s;
+  }
+  
+  .navbar-custom .nav-link:hover,
+  .navbar-custom .navbar-brand:hover {
+    color: #ffcc00; /* Cor do texto quando passar o mouse */
+  }
+
+  
