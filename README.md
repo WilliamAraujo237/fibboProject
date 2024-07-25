@@ -37,7 +37,7 @@
   </li>
 </ul>
 <h2>
-  Observações Java SpringBoot <img aling="center" alt="JAVA" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/> <img aling="center" alt="SPING" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"/>
+  Observações Java SpringBoot <img aling="center" alt="JAVA" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/> <img aling="center" alt="SPING" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"/>
 </h2>
 </h2>
 <p>
