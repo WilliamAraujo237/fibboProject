@@ -12,7 +12,7 @@
  ✅ Projeto Concluído ✅
 </h3>
 <h2>
-  📄 Ferramentas e Linguagem utilizada
+  📄 Ferramentas e Linguagens utilizadas
 </h2>
 <ul>
   <li> Java </li>
