@@ -30,10 +30,12 @@
 </ul>
 <h2>
   Observações Angular <img aling="center" alt="ANGULAR" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"/>
-<p>
-  A aplicação angular pode ser inicializada via CMD com o comando "ng serve", a porta tradicional de inicialização é a 4200
-  no entanto, caso essa porta já estiver em execução, o proprio sistema se encaregará de procurar outra porta disponivel de maneira automativa.
-</p>
+<ul>
+  <li>
+      A aplicação angular pode ser inicializada via CMD com o comando "ng serve", a porta tradicional de inicialização é a 4200
+      no entanto, caso essa porta já estiver em execução, o proprio sistema se encaregará de procurar outra porta disponivel de maneira automativa.
+  </li>
+</ul>
 <h2>
   Observações Java SpringBoot <img aling="center" alt="JAVA" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/> <img aling="center" alt="SPING" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"/>
 </h2>
