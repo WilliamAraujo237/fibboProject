@@ -29,14 +29,14 @@
   <li> XAMPP </li>
 </ul>
 <h2>
-  Observações Angular https://img.icons8.com/?size=100&id=71257&format=png&color=000000
+  Observações Angular <img aling="center" alt="SPING" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg"/>
 </h2>
 <p>
   A aplicação angular pode ser inicializada via CMD com o comando "ng serve", a porta tradicional de inicialização é a 4200
   no entanto, caso essa porta já estiver em execução, o proprio sistema se encaregará de procurar outra porta disponivel de maneira automativa.
 </p>
 <h2>
-  Observações Java Spring https://img.icons8.com/?size=100&id=13679&format=png&color=000000 
+  Observações Java Spring <img aling="center" alt="JAVA" height="20" width="20" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
 </h2>
 <p>
   A aplicação Java nescessita de algumas configurações para funcionar da maneira correta
