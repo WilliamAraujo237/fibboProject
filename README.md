@@ -6,7 +6,7 @@
 </h2>
 <p>
   O projeto trata-se de uma aplicação Full-Stack, desenvolvida com uma API Rest Java e uma aplicação Angular.
-  Com esse sistema o usuário pode simular um hambiente de gestão para uma empresa de venda de produtos gerais.
+  Com esse sistema o usuário pode simular um ambiente de gestão para uma empresa de venda de produtos gerais.
 </p>
 <h3>
  ✅ Projeto Concluído ✅
@@ -33,7 +33,7 @@
 <ul>
   <li>
       A aplicação angular pode ser inicializada via CMD com o comando "ng serve", a porta tradicional de inicialização é a 4200
-      no entanto, caso essa porta já estiver em execução, o próprio sistema se encarregará de procurar outra porta disponível de maneira automática.
+      no entanto, caso essa porta já esteja em execução, o próprio sistema se encarregará de procurar outra porta disponível de maneira automática.
   </li>
 </ul>
 <h2>
@@ -43,7 +43,7 @@
 <p>
   A aplicação Java nescessita de algumas configurações para funcionar da maneira correta
   <ul>
-    <li>Criar um banco de dados com o nome fibbo, a mesma será utilizada no arquivo aplication.properties</li>
+    <li>Criar um banco de dados com o nome fibbo, o mesmo será utilizado no arquivo aplication.properties</li>
     <li>Deixe o banco sem senha e com o username = root ou modifique as propriedades (spring.datasource.url),(spring.datasource.username) e (spring.datasource.password) do arquivo aplication.properties</li>
     <li>A porta padrão para a execução do projeto java Spring está como 8080, caso deseje modificar a porta adicione essa informação no arquivo "aplication.properties" server.port= número da porta </li>
   </ul>
